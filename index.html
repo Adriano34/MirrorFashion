@@ -5,7 +5,7 @@
     <title>
         Mirror Fashion</title>
     <meta charset="utf-8">
-<style>
+    <style>
         p {
             background-color:    white;
             color: blue;
@@ -20,27 +20,35 @@
 <body>
     <h1>Olá, sou o index.html!</h1>
     <h2>Bem-vindo à Mirror Fashion, sua loja de roupas e acessórios.</h2>
-    <ul>
-        <li>Confira nossas promoções.</li>
-        <li>Receba informações sobre nossos lançamentos por email.</li>
-        <li>Navegue por todos nossos produtos em catálogo.</li>
-        <li>Compre sem sair de casa.</li>
-    </ul>
+
+    <nav class="menu opcoes menu-cabeçalho">
+        <ul>
+            <li>Confira nossas promoções.</li>
+            <li>Receba informações sobre nossos lançamentos por email.</li>
+            <li>Navegue por todos nossos produtos em catálogo.</li>
+            <li>Compre sem sair de casa.</li>
+        </ul>
+    </nav>
+
     <figure>
         <img src="img/destaque-home.png" alt="Foto do produto">
         <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
     </figure>
+
     <figure>
         <img src="img/centro-distribuicao.png">
         <figcaption>Centro de distribuição da Mirror Fashion</figcaption>
     </figure>
-    <figure>
+
+    <figure id="familia-pelho">
         <img src="img/familia-pelho.jpg">
-        <figcaption>Família Pelho</figcaption>
+        <figcap
+        tion>Família Pelho</figcaption>
     </figure>
     <p style="color: blue; background-color: white;">
         O conteúdo desta tag será exibido em azul com fundo amarelo no navegador!
     </p>
+
     <p>
         O conteúdo desta tag será exibido em azul com fundo amarelo!
     </p>
@@ -51,15 +59,12 @@
     </p>
     <ul>
         <li>Primeiro item da lista</li>
-        <li>
-            Segundo item da lista:
-            <ul>
-                <li>Primeiro item da lista aninhada</li>
-                <li>Segundo item da lista aninhada</li>
-            </ul>
-        </li>
+        <li>Segundo item da lista:<ul>
+        <li>Primeiro item da lista aninhada</li>
+        <li>Segundo item da lista aninhada</li>
         <li>Terceiro item da lista</li>
     </ul>
+
     <ol>
         <li>Primeiro item da lista</li>
         <li>Segundo item da lista</li>
@@ -67,23 +72,24 @@
         <li>Quarto item da lista</li>
         <li>Quinto item da lista</li>
     </ol>
+
     <dl>
-        <dt>HTML</dt>
-        <dd>
-            HTML é a linguagem de marcação de textos utilizada
-            para exibir textos como páginas na Internet.
-        </dd>
-        <dt>Navegador</dt>
-        <dd>
-            Navegador é o software que requisita um documento HTML
-            através do protocolo HTTP e exibe seu conteúdo em uma
-            janela.
-        </dd>
+            <dt>HTML</dt>
+            <dd>
+                HTML é a linguagem de marcação de textos utilizada
+                para exibir textos como páginas na Internet.
+            </dd>
+
+            <dt>Navegador</dt>
+
+            <dd>
+                Navegador é o software que requisita um documento HTML
+                através do protocolo HTTP e exibe seu conteúdo em uma
+                janela.
+            </dd>
     </dl>
 
-    <p>
-        Visite o site da <a href="http://www.caelum.com.br">Caelum</a>.
-    </p>
+    <p> Visite o site da <a href="http://www.caelum.com.br">Caelum</a></p>
     <p>Mais informações <a href="#info">aqui</a>.</p>
     <p>Conteúdo da página...</p>
     <h2 id="info">Mais informações sobre o assunto:</h2>
@@ -97,6 +103,9 @@
         Jacarezinho, no Paraná
     </a>
 
+    <div class="info container"> 
+        <p>Conteúdo que deve ficar centralizado</p>
+    </div>
 
 </body>
 
