@@ -167,3 +167,51 @@ footer .container {
     margin-left: 25px;
 }
 
+.destaque {
+    position: relative;
+}
+
+.pause,
+.play {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.pause {
+    border-left: 10px solid #900;
+    border-right: 10px solid #900;
+    height: 30px;
+    width: 5px;
+}
+
+.play {
+border-left: 25px solid #900;
+border-bottom: 15px solid transparent;
+border-top: 15px solid transparent;
+}
+
+h2 ~ p {
+    font-style: italic;
+}
+
+h1 {
+    color: blue;
+}
+
+article > h1 {
+color: blue;
+} 
+
+p:first-letter {
+    font-weight: bold;
+}
+
+h1 + p {
+    text-indent: 0;
+}
+
+p:first-line {
+    font-variant: small-caps;
+}
