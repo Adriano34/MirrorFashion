@@ -1,0 +1,61 @@
+
+@media (min--moz-device-pixel-ratio:0) {
+    fieldset {
+    display: table-column;
+}
+}
+
+.cores label:after {
+    border: 6px solid rgba(0,0,0,0);
+    transition: 1s;
+}
+
+.cores label:hover:after {
+    border: 6px solid rgba(0,0,0,0.1);
+}
+fieldset {
+    display: table-column;
+}
+
+@media (min-width: 630px) {
+
+.produto {
+    /* a foto vai se posicionar absolutamente com relação
+    a esse elemento, por isso preciso estar posicionado
+    */
+    font-size: 1.2em;
+    position: relative;
+    /* deixo 40% de espaço em branco na esquerda para foto ocupar */
+    padding-left: 40%;
+}
+        
+.cores {
+    /* eu era relative antes; reinicio para static para evitar
+    que a foto se posicione com relação a mim
+    */
+    position: static;
+    padding: 0;
+}
+
+.cores legend {
+    /* eu era absolute antes, para ter o mesmo comportamento no Chrome e
+    no Firefox; agora quero voltar ao fluxo da página
+    */
+    position: static;
+}
+
+.cores label img {
+    /* imagem se posiciona absolutamente à esquerda com relação ao .produto */
+    max-width: 35%;
+    max-height: 100%;
+}
+
+.cores label:after {
+    /* as bolinhas coloridas tinham posição absoluta.
+    não precisamos mais, basta flutuar uma do lado da outra */
+    position: static;
+    float: left;
+    margin-right: 10px;
+    }
+}
+
