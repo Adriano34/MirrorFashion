@@ -8,3 +8,5 @@
         </ul>
     </div>
 </footer>
+
+<script src="js/home.js"></script>

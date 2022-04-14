@@ -285,6 +285,10 @@ body {
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+    position:           absolute;
+    top:                30px;
 }
 
 label[for=verde]:after {
@@ -299,11 +303,8 @@ label[for=azul]:after {
     background-color: #6666FF;
 }
 
-.cores label:after {
-    -moz-box-sizing:    border-box;
-    box-sizing:         border-box;
-    position:           absolute;
-    top:                30px;
+.cores input:checked + label:after {
+    border: 6px solid rgba(0,0,0,0.3);
 }
 
 .cores input[type=radio] {

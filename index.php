@@ -1,12 +1,18 @@
+
+<?php
+    $cabecalho_title = "Produto da Mirror Fashion";
+    include("cabecalho.php");
+?>
+<title><?php print $cabecalho_title; ?> </title>
 <div class="container destaque">
-            <section class="busca">
-                <h2>Busca</h2>
-                <form action="http://www.google.com.br/search" id="form-busca">>
-                    <input type="search" name="q" id="q">
-                    <input type="image" src="img/busca.png">
-                    
-                </form>
-            </section><!-- fim .busca -->
+        <section class="busca">
+            <h2>Busca</h2>
+            <form action="http://www.google.com.br/search" id="form-busca">>
+                <input type="search" name="q" id="q">
+                <input type="image" src="img/busca.png">
+                
+            </form>
+        </section><!-- fim .busca -->
 
             <section class="menu-departamentos">
                 <h2>Departamentos</h2>
@@ -155,21 +161,13 @@
         </div>
 
         <footer>
-                <div class="container">
+            <div class="container">
                     <img src="img/logo-rodape.png" alt="Logo Mirror Fashion">
                     <ul class="social">
                         <li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
                         <li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
                         <li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
                     </ul>
-                </div>
+            </div>
         </footer>
-
-                       
-  
-
-    <script src="js/home.js"></script>
-    
-    
-</body>
 </html>
