@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
         <meta name="viewport" content="width=device-width">
-        <?php print @$cabecalho_css; ?>  
+        <?php echo @$cabecalho_css; ?>  
     <body>
 <header class="container">
         <h1>
@@ -16,7 +16,7 @@
         <p class="sacola">
             Nenhum item na sacola de compras
         </p>
-    <nav class="menu-opcoes">
+        <nav class="menu-opcoes">
         <ul>
             <li><a href="#">Sua Conta</a></li>
             <li><a href="#">Lista de Desejos</a></li>

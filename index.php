@@ -168,6 +168,6 @@
                         <li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
                         <li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
                     </ul>
-            </div>
+            </div>git
         </footer>
 </html>
