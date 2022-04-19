@@ -8,6 +8,7 @@
     $cabecalho_title = "Produto da Mirror Fashion"; 
     include("cabecalho.php"); 
 ?>
+
 <div class="produto-back">
     <div class="container">
         <div class="produto">
@@ -38,15 +39,24 @@
 
                     <fieldset class="tamanho">
                         <legend>Escolha o tamanho:</legend>
+
                         <input type="range" name="tamanho" min="34" max="54" value="38" step="2">
                     </fieldset>
-                    
                 </div>
-                <input type="submit" class="comprar" value="Comprar">
-                <input type="hidden" name="id" value="<?= $produto['id'] ?>">
-                <input type="hidden" name="preço" value="R$ 159,90" id="preço">
-            </form>
-            <div class="detalhes">
+                    
+                    <input type="submit" class="comprar" value="Comprar">
+                    <input type="hidden" name="id" value="<?= $produto['id'] ?>">
+                    <input type="hidden" name="preco" value="<?= $produto['preco'] ?>" id="preco">
+                    <input type="text" list="cidades" autocomplete="on">
+                    <datalist id="cidades">
+                        <option value="Brasília">
+                        <option value="Rio de Janeiro">
+                        <option value="São Paulo">
+                    </datalist>
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                    <input type="text" pattern="^@\w{2,}" name="usuario_twitter">
+
+            <div class="detalhes"> 
                 <h2>Detalhes do produto</h2>
                 <p><?= $produto['descricao'] ?> </p>
                 <table>
@@ -56,6 +66,7 @@
                             <th>Detalhe</th>
                         </tr>
                     </thead>
+                    
                     <tbody>
                         <tr>
                             <td>Modelo</td>
@@ -79,6 +90,7 @@
         </div>
     </div>
 </div>
+
 <?php include("rodape.php"); ?>
 
 

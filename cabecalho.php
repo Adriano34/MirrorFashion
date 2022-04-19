@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title><?php echo $cabecalho_title; ?> </title>
+        <title><?php echo $cabecalho_title; ?> <?= $produto['nome'] ?></title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
@@ -10,6 +10,7 @@
         <?php echo @$cabecalho_css; ?>  
     <body>
 <header class="container">
+    <div class="cabecalho">
         <h1>
             <img src="img/logo.png" alt="Mirror Fashion">
         </h1>
