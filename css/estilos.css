@@ -453,3 +453,8 @@ label[for=azul]:after {
     border-radius: 50%;
     color: #555;
 }
+
+@font-face {
+    font-family: "Minha Fonte";
+    src: url("minhafonte.ttf");
+}
