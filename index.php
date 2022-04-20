@@ -1,11 +1,8 @@
-
 <?php
     $cabecalho_title = "Produto da Mirror Fashion";
     include("cabecalho.php");
 ?>
-<html>
-    <title><?php print $cabecalho_title; ?> </title>
-    <div class="container destaque">
+<div class="container destaque">
         <section class="busca">
             <h2>Busca</h2>
             <form action="http://www.google.com.br/search" id="form-busca">>
@@ -39,7 +36,7 @@
             <ol>
                 <?php
                     $conexao = mysqli_connect("127.0.0.1", "root", "", "WD43");
-                    $dados = mysqli_query($conexao, "SELECT * FROM produtos");
+                    $dados = mysqli_query($conexao, "SELECT * FROM produtos LIMIT 12");
                     while ($produto = mysqli_fetch_array($dados)):
                 ?>
                 <li>
@@ -53,6 +50,7 @@
                 </li>
                 <?php endwhile; ?>
             </ol>
+            <button type="button">Mostra mais</button>
         </section>
     </div>
 

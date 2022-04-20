@@ -41,6 +41,7 @@
                         <legend>Escolha o tamanho:</legend>
 
                         <input type="range" name="tamanho" min="34" max="54" value="38" step="2">
+                        <output for="tamanho" name="valortamanho">42</output>
                     </fieldset>
                 </div>
                     

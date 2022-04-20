@@ -62,29 +62,37 @@ bottom: 10px;
 }
 
 @media (min-width: 720px) {
-    header h1 {
+header h1 {
     text-align: left;
     margin: 5px 0;
-    }
-    .menu-opcoes {
+}
+
+.menu-opcoes {
     position: absolute;
-    }
-    .sacola {
+}
+
+.sacola {
     display: block;
-    }
-    .painel li {
+}
+
+.painel li {
     width: 15%;
-    }
-    .busca, .menu-departamentos {
+}
+
+.busca, .menu-departamentos {
     margin-right: 1%;
     width: 30%;
-    }
-    .menu-departamentos nav > ul {
+}
+
+.menu-departamentos nav > ul {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
-    }
-    .destaque img {
+}
+    
+.destaque img {
     width: 69%;
     }
-    }
+}
+
+body { padding-top: 70px; }

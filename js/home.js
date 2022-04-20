@@ -1,3 +1,14 @@
+<script src="js/jquery.js"></script>
+
+    $('[name=tamanho]').on('input', function(){
+    $('[name=valortamanho]').val(this.value);
+});
+
+    $('.novidades').addClass('painel-compacto');
+    $('.novidades button').click(function() {
+    $('.novidades').removeClass('painel-compacto');
+});
+
 document.querySelectorAll('#form-busca').onsubmit = function() {
     if (document.querySelectorAll('#q').value == '') {
         document.querySelectorAll('#form-busca').style.background = 'onfocus';
@@ -55,3 +66,4 @@ document.querySelector('input[type=email]').oninvalid = function() {
     this.setCustomValidity("Email inválido");
     }
 };
+
