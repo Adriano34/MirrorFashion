@@ -1,3 +1,6 @@
+<link href='http://fonts.googleapis.com/css?family=PT+Sans|Bad+Script'
+rel='stylesheet'>
+
 <?php
     $cabecalho_title = "Produto da Mirror Fashion";
     include("cabecalho.php");
@@ -37,6 +40,28 @@
                 <?php
                     $conexao = mysqli_connect("127.0.0.1", "root", "", "WD43");
                     $dados = mysqli_query($conexao, "SELECT * FROM produtos LIMIT 12");
+                    while ($produto = mysqli_fetch_array($dados)):
+                ?>
+                <li>
+                    <a href="produto.php?id=<?= $produto['id'] ?>">
+                    <figure>
+                        <img src="img/produtos/miniatura<?= $produto['id'] ?>.png"
+                        alt="<?= $produto['nome'] ?> ">
+                        <figcaption><?= $produto['nome'] ?> por <?= $produto['preco'] ?></figcaption>
+                    </figure>
+                    </a>
+                </li>
+                <?php endwhile; ?>
+            </ol>
+            <button type="button">Mostra mais</button>
+        </section>
+
+        <section class="painel mais-vendidos">
+                <h2>mais vendidos</h2>
+            <ol>
+                <?php
+                    $conexao = mysqli_connect("127.0.0.1", "root", "", "WD43");
+                    $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY vendas DESC LIMIT 12");
                     while ($produto = mysqli_fetch_array($dados)):
                 ?>
                 <li>

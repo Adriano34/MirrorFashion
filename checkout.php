@@ -98,22 +98,22 @@
                 <div class="panel panel-sucess">
                 <div class="panel-heading">
                 <h2>Sua compra</h2>
-                <img src="img/produtos/foto1-verde.png" alt="Fuzzy Cardigan"
+                <img src="img/produtos.png" alt="Promoção: Big City Night"
                     class="img-thumbnail img-responsive">
             </div>
             
             <dl>
                 <dt>Produto</dt>
-                <dd>Fuzzy Cardigan</dd>
+                <dd><?= $_POST['nome'] ?> </dd>
 
                 <dt>Cor</dt>
-                <dd>verde</dd>
+                <dd><?= $_POST['cor'] ?> </dd>
 
                 <dt>Tamanho</dt>
-                <dd>40</dd>
+                <dd><?= $_POST['tamanho'] ?> </dd>
 
-                <dt>Preço</dt>
-                <dd>R$ 129,00</dd>            
+                <dt>Preco</dt>
+                <dd><?= $_POST['preco'] ?> </dd>            
             </dl>
         </div>
         <script src="js/jquery.js"></script>

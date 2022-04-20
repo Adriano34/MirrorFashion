@@ -458,3 +458,11 @@ label[for=azul]:after {
     font-family: "Minha Fonte";
     src: url("minhafonte.ttf");
 }
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.painel h2 {
+    font-family: 'Bad Script', sans-serif;
+}
