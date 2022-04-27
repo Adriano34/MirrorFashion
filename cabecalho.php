@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title><?php echo $cabecalho_title; ?> <?= $produto['nome'] ?></title>
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet/less" href="less/estilos.less">
         <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
         <meta name="viewport" content="width=device-width">
         <?php echo @$cabecalho_css; ?>  

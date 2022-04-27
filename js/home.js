@@ -1,5 +1,6 @@
 <script src="js/jquery.js"></script>
 
+
     $('[name=tamanho]').on('input', function(){
     $('[name=valortamanho]').val(this.value);
 });
@@ -47,14 +48,6 @@ document.querySelector('form input').oninvalid = function(evt) {
     if (!this.validity.valid) {
     alert("Nome obrigatório!");
     }
-};
-
-this.setCustomValidity("");
-    // reexecuta validação
-    if (!this.validity.valid) {
-    // se inválido, coloca mensagem de erro
-    this.setCustomValidity("Email inválido");
-    }   
 };
 
 document.querySelector('input[type=email]').oninvalid = function() {
